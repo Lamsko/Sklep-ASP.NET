@@ -38,4 +38,15 @@
         </strong>
     </div>
     <br />
+    <table>
+        <tr>
+            <td>
+                <asp:Button ID="UpdateBtn" runat="server" Text="Aktualizuj koszyk"
+                    OnClick="UpdateBtn_Click" />
+            </td>
+            <td>
+                <!--Checkout placeholder-->
+            </td>
+        </tr>
+    </table>
 </asp:Content>
