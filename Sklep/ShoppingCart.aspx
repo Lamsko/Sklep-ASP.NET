@@ -1,8 +1,8 @@
-﻿<%@ Page Title="Koszyk" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" 
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" 
     CodeBehind="ShoppingCart.aspx.cs" Inherits="Sklep.ShoppingCart" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div id="ShoppingCartTitle" runat="server" class="ContentHead">
-        <h1><%: Page.Title %></h1>
+        <h1>Koszyk</h1>
     </div>
     <asp:GridView ID="CartList" runat="server" AutoGenerateColumns="false" ShowFooter="true"
         GridLines="Vertical" CellPadding="4" ItemType="Sklep.Models.CartItem"
@@ -10,14 +10,14 @@
         <Columns>
             <asp:BoundField DataField="ProductID" HeaderText="ID" SortExpression="ProductID" />
             <asp:BoundField DataField="Product.ProductName" HeaderText="Nazwa" />
-            <asp:BoundField DataField="Product.UnitPrice" HeaderText="Cena (sztuka)" DataFormatString="{0;c}"/>
+            <asp:BoundField DataField="Product.UnitPrice" HeaderText="Cena (sztuka)" DataFormatString="{0:c}"/>
             <asp:TemplateField HeaderText="Ilość">
                 <ItemTemplate>
                     <asp:TextBox ID="PurchaseQuantity" Width="40" runat="server" 
                         Text="<%#: Item.Quantity %>"></asp:TextBox>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="Ilość łącznie">
+            <asp:TemplateField HeaderText="Cena łącznie">
                 <ItemTemplate>
                     <%#: String.Format("{0:c}", ((Convert.ToDouble(Item.Quantity)) *
     Convert.ToDouble(Item.Product.UnitPrice)))%>

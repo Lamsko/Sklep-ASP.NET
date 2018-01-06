@@ -49,6 +49,11 @@
                                         <b>Cena: </b><%#: String.Format("{0:c}", Item.UnitPrice) %>
                                     </span>
                                     <br />
+                                    <a href="AddToCart.aspx?productID=<%#: Item.ProductID %>">
+                                        <span class="ProductListItem">
+                                            <b>Dodaj do koszyka</b>
+                                        </span>
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
