@@ -11,8 +11,8 @@
             <table>
                 <tr>
                     <td>
-                        <img src="Images/<%#: Item.ImagePath %>" 
-                            style=""border: solid; height:300px"
+                        <img src="/Images/Thumbs/<%#: Item.ImagePath %>" 
+                            style="border: solid; height="300"; width="300";" 
                             alt="<%#: Item.ProductName %>" />
                     </td>
                     <td>&nbsp;</td>
