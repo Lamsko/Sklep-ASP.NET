@@ -14,7 +14,7 @@
                 <EmptyDataTemplate>
                     <table>
                         <tr>
-                            <td>Nie zwrócono żadnych danych.</td>
+                            <td>Brak produktów.</td>
                         </tr>
                     </table>
                 </EmptyDataTemplate>

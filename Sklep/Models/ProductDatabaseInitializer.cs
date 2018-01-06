@@ -77,7 +77,7 @@ namespace Sklep.Models
                     Description = "opis sera",
                     ImagePath = "parmezan.png",
                     UnitPrice = 85.50,
-                    CategoryID = 4
+                    CategoryID = 3
                 },
                 new Product
                 {
@@ -86,7 +86,7 @@ namespace Sklep.Models
                     Description = "opis sera",
                     ImagePath = "mozarella.png",
                     UnitPrice = 26.50,
-                    CategoryID = 1
+                    CategoryID = 3
                 },
                 new Product
                 {
@@ -95,7 +95,7 @@ namespace Sklep.Models
                     Description = "opis mięsa",
                     ImagePath = "mincemeat.png",
                     UnitPrice = 16.50,
-                    CategoryID = 3
+                    CategoryID = 4
                 },
                 new Product
                 {
@@ -104,7 +104,7 @@ namespace Sklep.Models
                     Description = "opis mięsa",
                     ImagePath = "turkeyfillet.png",
                     UnitPrice = 22.50,
-                    CategoryID = 3
+                    CategoryID = 4
                 },
                 new Product
                 {
@@ -122,7 +122,7 @@ namespace Sklep.Models
                     Description = "opis bułki",
                     ImagePath = "wholewheatbun.png",
                     UnitPrice = 6.50,
-                    CategoryID = 1
+                    CategoryID = 5
                 },
                 new Product
                 {
@@ -140,7 +140,7 @@ namespace Sklep.Models
                     Description = "opis cukinii",
                     ImagePath = "speltbread.png",
                     UnitPrice = 16.50,
-                    CategoryID = 1
+                    CategoryID = 5
                 },
             };
             return products;
