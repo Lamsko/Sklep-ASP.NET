@@ -218,6 +218,14 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Images\Thumbs\apple.png" />
+    <Content Include="Images\Thumbs\carrot.png" />
+    <Content Include="Images\Thumbs\mincemeat.png" />
+    <Content Include="Images\Thumbs\mozzarella.png" />
+    <Content Include="Images\Thumbs\orange.png" />
+    <Content Include="Images\Thumbs\parmezan.png" />
+    <Content Include="Images\Thumbs\speltbread.png" />
+    <Content Include="Images\Thumbs\turkeyfillet.png" />
+    <Content Include="Images\Thumbs\wholewheatbun.png" />
     <Content Include="Images\Thumbs\zuchcini.png" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductList.aspx" />
@@ -389,6 +397,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Product.cs" />
