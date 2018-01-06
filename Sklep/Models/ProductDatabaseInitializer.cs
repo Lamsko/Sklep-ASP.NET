@@ -84,7 +84,7 @@ namespace Sklep.Models
                     ProductID = 4,
                     ProductName = "Ser mozarella",
                     Description = "opis sera",
-                    ImagePath = "mozarella.png",
+                    ImagePath = "mozzarella.png",
                     UnitPrice = 26.50,
                     CategoryID = 3
                 },
@@ -129,7 +129,7 @@ namespace Sklep.Models
                     ProductID = 9,
                     ProductName = "Pomarańcze",
                     Description = "opis pomarańczy",
-                    ImagePath = "zuchcini.png",
+                    ImagePath = "orange.png",
                     UnitPrice = 5.50,
                     CategoryID = 2
                 },
