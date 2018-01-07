@@ -76,7 +76,7 @@ namespace Sklep
 		{
 			using (ShoppingCartActions userShoppingCart = new ShoppingCartActions())
 			{
-				string cartStr = string.Format("Cart ({0})", userShoppingCart.GetCount());
+				string cartStr = string.Format("Koszyk ({0})", userShoppingCart.GetCount());
 				cartCount.InnerText = cartStr;
 			}
 		}

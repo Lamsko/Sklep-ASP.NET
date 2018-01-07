@@ -4,6 +4,7 @@ using System.Web.UI.WebControls;
 using Sklep.Models;
 using Sklep.Logic;
 using System.Collections.Specialized;
+using System.Web.ModelBinding;
 
 namespace Sklep
 {
@@ -54,7 +55,7 @@ namespace Sklep
 					cartUpdates[i].RemoveItem = cbRemove.Checked;
 
 					TextBox quantityTextBox = new TextBox();
-					quantityTextBox = (TextBox)CartList.Rows[i].FindControl("PurchaseQunatity");
+					quantityTextBox = (TextBox)CartList.Rows[i].FindControl("PurchaseQuantity");
 					cartUpdates[i].PurchaseQuantity = Convert.ToInt16(quantityTextBox.Text.ToString());
 				}
 				usersShoppingCart.UpdateShoppingCartDatabase(cartId, cartUpdates);
