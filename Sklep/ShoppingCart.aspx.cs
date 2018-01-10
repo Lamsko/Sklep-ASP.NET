@@ -5,6 +5,7 @@ using Sklep.Models;
 using Sklep.Logic;
 using System.Collections.Specialized;
 using System.Web.ModelBinding;
+using System.Web.UI;
 
 namespace Sklep
 {
@@ -26,6 +27,7 @@ namespace Sklep
 					lblTotal.Text = "";
 					ShoppingCartTitle.InnerText = "Koszyk jest pusty";
 					UpdateBtn.Visible = false;
+					CheckoutImageBtn.Visible = false;
 				}
 			}
 		}
@@ -83,6 +85,15 @@ namespace Sklep
 		protected void UpdateBtn_Click(object sender, EventArgs e)
 		{
 			UpdateCartItems();
+		}
+
+		protected void CheckOutBtn_Click(object sender, ImageClickEventArgs e)
+		{
+			using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
+			{
+				Session["payment_amt"] = usersShoppingCart.GetTotal();
+			}
+			Response.Redirect("Checkout/CheckoutStart.aspx");
 		}
 	}
 }
