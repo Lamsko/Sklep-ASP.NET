@@ -9,8 +9,7 @@
             <hr />
             <asp:ValidationSummary runat="server" ShowModelStateErrors="true" CssClass="text-danger" />
             <p class="text-info">
-                You've authenticated with <strong><%: ProviderName %></strong>. Please enter an email below for the current site
-                and click the Log in button.
+                Uwierzytelniłeś się za pomocą <strong><%: ProviderName %></strong>. Uzupełnij email w polu poniżej i kliknij Zaloguj.
             </p>
 
             <div class="form-group">
@@ -25,7 +24,7 @@
 
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <asp:Button runat="server" Text="Log in" CssClass="btn btn-default" OnClick="LogIn_Click" />
+                    <asp:Button runat="server" Text="Zaloguj" CssClass="btn btn-default" OnClick="LogIn_Click" />
                 </div>
             </div>
         </div>
