@@ -62,7 +62,7 @@ public class NVAPICaller
 		encoder["PAYMENTREQUEST_0_AMT"] = amt;
 		encoder["PAYMENTREQUEST_0_ITEMAMT"] = amt;
 		encoder["PAYMENTREQUEST_0_PAYMENTACTION"] = "Sale";
-		encoder["PAYMENTREQUEST_0_CURRENCYCODE"] = "PLN";
+		encoder["PAYMENTREQUEST_0_CURRENCYCODE"] = "USD";
 
 		using (Sklep.Logic.ShoppingCartActions myCartOrders = new Sklep.Logic.ShoppingCartActions())
 		{
@@ -167,14 +167,17 @@ PayerID, ref NVPCodec decoder, ref string retMsg)
 	public string HttpCall(string NvpRequest)
 	{
 		string url = pEndPointURL;
+
 		string strPost = NvpRequest + "&" + buildCredentialsNVPString();
 		strPost = strPost + "&BUTTONSOURCE=" + HttpUtility.UrlEncode(BNCode);
+
 		HttpWebRequest objRequest = (HttpWebRequest)WebRequest.Create(url);
 		objRequest.Timeout = Timeout;
 		objRequest.Method = "POST";
 		objRequest.ContentLength = strPost.Length;
 		try
 		{
+			ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
 			using (StreamWriter myWriter = new
 			StreamWriter(objRequest.GetRequestStream()))
 			{
@@ -185,7 +188,7 @@ PayerID, ref NVPCodec decoder, ref string retMsg)
 		{
 			
 		}
-		
+
 		HttpWebResponse objResponse = (HttpWebResponse)objRequest.GetResponse();
 		string result;
 		using (StreamReader sr = new StreamReader(objResponse.GetResponseStream()))

@@ -87,7 +87,7 @@ namespace Sklep
 			UpdateCartItems();
 		}
 
-		protected void CheckOutBtn_Click(object sender, ImageClickEventArgs e)
+		protected void CheckoutBtn_Click(object sender, ImageClickEventArgs e)
 		{
 			using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
 			{

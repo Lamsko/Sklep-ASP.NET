@@ -45,6 +45,11 @@
 				<asp:Button ID="UpdateBtn" runat="server" Text="Aktualizuj koszyk"
 					OnClick="UpdateBtn_Click" />
 			</td>
+		</tr>
+		<tr>
+			<td><h3>Zapłać:</h3></td>
+		</tr>
+		<tr>
 			<td>
 				<asp:ImageButton ID="CheckoutImageBtn" runat="server"
 					ImageUrl="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_150x38.png"
