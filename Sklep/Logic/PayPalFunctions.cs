@@ -85,11 +85,10 @@ public class NVAPICaller
 		NVPCodec decoder = new NVPCodec();
 		decoder.Decode(pStresponsenvp);
 		string strAck = decoder["ACK"].ToLower();
-		if (strAck != null && (strAck == "success" || strAck ==
-		"successwithwarning"))
+		if (strAck != null && (strAck == "success" || strAck == "successwithwarning"))
 		{
 			token = decoder["TOKEN"];
-			string ECURL = "https://" + host + "/cgi-bin/webscr?cmd=_expresscheckout" + "&token=" + token;
+			string ECURL = "https://" + host + "/cgi-bin/webscr?cmd=_express-checkout" + "&token=" + token;
 			retMsg = ECURL;
 			return true;
 		}
