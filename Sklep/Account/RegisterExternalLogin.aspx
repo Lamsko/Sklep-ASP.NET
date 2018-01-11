@@ -1,11 +1,11 @@
 ﻿<%@ Page Title="Register an external login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RegisterExternalLogin.aspx.cs" Inherits="Sklep.Account.RegisterExternalLogin" Async="true" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-<h3>Register with your <%: ProviderName %> account</h3>
+<h3>Zarejestruj się za pomocą konta <%: ProviderName %></h3>
 
     <asp:PlaceHolder runat="server">
         <div class="form-horizontal">
-            <h4>Association Form</h4>
+            <h4>Formularz</h4>
             <hr />
             <asp:ValidationSummary runat="server" ShowModelStateErrors="true" CssClass="text-danger" />
             <p class="text-info">
