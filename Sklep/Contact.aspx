@@ -1,13 +1,15 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Sklep.Contact" %>
+﻿<%@ Page Title="Kontakt" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Sklep.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
+    <h3>Dane kontaktowe:</h3>
     <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
+        Chorwacka 88/33<br />
+        51-107 Wrocław<br />
+        <abbr title="Phone">Tel:</abbr>
+        +48 555 555 555 <br />
+		 NIP: 1234567890 <br />
+		 KRS: 1234567890 <br />
     </address>
 
     <address>
